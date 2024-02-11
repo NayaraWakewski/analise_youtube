@@ -4,28 +4,36 @@
 
 # Desafio DataGlowUp - Analise dos Dados do YOUTUBE.
 
-# Dashboard de Análise de Colisões em NYC
+Foi proposto um desafio para fazer uma análise com os dados do Youtube, de alguns países, do período de 2006 a 2018.
 
-Este dashboard interativo foi desenvolvido com o objetivo de proporcionar uma análise abrangente e informativa sobre acidentes de trânsito em Nova York. 
-O dashboard utiliza a biblioteca Streamlit para criar uma interface interativa e visualizações de dados utilizando bibliotecas como Altair, Plotly, Folium, Seaborn, e Matplotlib.
-Principal objetivo do projeto como Streamlit, é demonstrar que é possivel utilizar outras possibilidades de visualização de projetos além das ferramentas de Dataviz.
+---
+# 🚀 Análise Exploratória e Tratamento (PYTHON).
 
-## ⚙️ Instalação e Execução
+Foi utilizado o Python e o Notebook Jupyter para fazer as primeiras análises da base de dados.
+A base de dados, continha vários arquivos csv e json, separada por países.
+Decidi converter as bases para dataframe, para proceder com a unificação dos dados, criando 2 datframes: 
 
-Para executar o dashboard localmente, certifique-se de ter o Python e as bibliotecas necessárias instaladas. Você pode instalar as dependências utilizando o seguinte comando:
+-**df_youtube** - contendo a base geral dos dados.
+-**df_catgorias** - contendo o id e nome das categorias dos vídeos.
 
-```bash
-pip install streamlit pandas seaborn matplotlib folium plotly altair Pillow
-```
+No notebook contém todo o passo a passo dessas análises, tratamentos e merge das bases.
 
-Ideal é que seja criado um ambiente virtual para execução do projeto.
+---
 
+## 🚀 Análises Estatísticas (PYTHON).
 
-```bash
-streamlit run nome_do_script.py
-```
+Como a base de dados, continha muitas informações numéricas, decidi fazer algumas análises estatíticas, antes de proceder com a visualização no PowerBi.
 
-O dashboard será iniciado em um servidor local e você poderá acessá-lo no navegador.
+### Resumo da Análise Estatística das Métricas de Vídeos - 
+Foi utilizado Mapa de Calor, que representa visualmente a matriz de correlação entre as métricas selecionadas.
+
+### Análise de Regressão das Métricas de Engajamento no YouTube - 
+Neste segmento da análise, dediquei-me a explorar a relação entre várias métricas de engajamento de vídeos no YouTube, como `likes` (curtidas), `dislikes` (descurtidas), e `comment_count` (contagem de comentários), e como elas influenciam a métrica de `views` (visualizações). O foco foi estabelecer um modelo de regressão linear múltipla para quantificar essas relações e oferecer insights sobre a dinâmica do engajamento dos espectadores.
+
+### Análise de Cluster dos Vídeos do YouTube - 
+Focando nas métricas de engajamento — likes, dislikes e comment_count e apresentado gráficos de distribuição de clusters e do método cotovelo.
+
+---
 
 ## 🚀 Funcionalidades do Dashboard
 
@@ -33,42 +41,43 @@ O dashboard será iniciado em um servidor local e você poderá acessá-lo no na
 O dashboard permite a seleção de filtros para personalizar a análise dos dados, incluindo:
 
 - **Ano:** Selecione o ano desejado para análise.
-- **Mês:** Escolha um mês específico ou selecione todos.
-- **Bairro:** Selecione um bairro específico ou escolha todos.
-- **Fator de Contribuição:** Escolha um fator de contribuição específico ou selecione todos.
-- **Tipo de Veículo:** Escolha um tipo de veículo específico ou selecione todos.
+- **País:** Escolha um país específico.
+- **Categoria:** Selecione uma categoria específica.
+- **Canal:** Escolha um canal especifíco.
 
-### Análise Temporal
-- **Número de Colisões por Ano:** Gráfico de barras que exibe o número de colisões por ano.
-- **Total de Colisões por Mês:** Gráfico de barras que mostra o total de colisões por mês no ano selecionado.
+### Análise de Engajamento
 
-### Análise Geográfica
-- **Mapa Interativo de Colisões:** Mapa interativo que exibe a localização de colisões com pessoas feridas ou mortas.
+- **Cartões com Quantitativo:** Gráfico de cartão com quantitativo de likes, comentários, categorias e visualizações.
+- **Gráfico de Linha:** Gráfico de Linha demostrando a evolução de visualizações por ano.
+- **Taxa de Engajamento** Gráfico de barras horizontais, demostrando a taxa % de engajamento por categoria de vídeos.
+- **Top5 Países com % de engajamento e canal** Gráfico de barras verticais, demostrando o top5 países com maior taxa de engajamento/canal.
 
-### Top 10 Fatores Contribuintes
-- **Gráfico de Barras:** Mostra os top 10 fatores contribuintes para colisões.
 
-### Análise de Feridos e Mortos por Tipo de Veículo
-- **Gráfico de Barras Empilhadas:** Exibe o número de feridos e mortos por tipo de veículo.
+### Mapa de Engajamento
 
-### Análises Estatísticas
+- **Mapa Interativo dos Países:** Mapa interativo que exibe a localização dos países e com as bolhas por engajamento.
 
-#### Distribuição Temporal Diária
-- **Distribuição Temporal Diária de Colisões:** Gráfico de barras que mostra a distribuição temporal diária de colisões.
 
-## Observações e Insights
+### Análise de Correlação
 
-- O mapa interativo proporciona uma visualização dinâmica e intuitiva das áreas com maior incidência de colisões, facilitando a identificação de padrões espaciais.
-- A análise dos fatores contribuintes destaca a importância da atenção ao volante para evitar acidentes.
-- O gráfico de feridos e mortos por tipo de veículo ressalta a necessidade do uso do cinto de segurança para prevenir lesões graves.
+- **Mapa de Calor:** Esse visual foi feito no Python e importado a imagem para o Powerbi, demostra a correlação das variáveis.
 
-## 🛠️ Deploy
 
--Foi utilizado o https://streamlit.io/ , conectando a API pelo repositório do GitHub.
+### Análise de Dispersão
 
-Link da API: https://transitony.streamlit.app/
+- **Gráfico de Dispersão com Linha de Tendência** Demostra a relação entre o engajamento total e as visualizações.
+
+
+### Análise de Satisfação
+
+- **Gráfico de Barras Horizontais:** Gráfico de barras que mostra o % de satisfação por categoria, onde verde tem o maior percentual positivo de satisfação e vermelhor tem o menor percentual positivo (negativo) de satisfação.
+
+---
+## 🛠️ Link do visual do PowerBi.
+
+
   
-
+---
 ## 🎁 Expressões de gratidão
 
 * Compartilhe com outras pessoas esse projeto 📢;
