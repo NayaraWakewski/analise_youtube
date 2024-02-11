@@ -1,6 +1,5 @@
 
-![texto alt]
-
+![youtube-small-icon-8 (1)](https://github.com/NayaraWakewski/analise_youtube/assets/79403619/86711b0a-a80a-4f72-9f9f-c6b11ab88a7e)
 
 
 # Desafio DataGlowUp - Analise dos Dados do YOUTUBE.
