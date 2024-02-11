@@ -75,7 +75,7 @@ O dashboard permite a seleção de filtros para personalizar a análise dos dado
 ---
 ## 🛠️ Link do visual do PowerBi.
 
-
+https://app.powerbi.com/view?r=eyJrIjoiMGUzZTBhYmUtMDc0MC00NmNjLWEyMzUtNzc5YTUwYTFjYzMwIiwidCI6ImVjYTFhZTJkLWU5MjktNGM2OS1iZmEyLTAxNWQ0YzQ3OGY4YSJ9
   
 ---
 ## 🎁 Expressões de gratidão
