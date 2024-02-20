@@ -2,7 +2,7 @@
 ![youtube-small-icon-8 (1)](https://github.com/NayaraWakewski/analise_youtube/assets/79403619/86711b0a-a80a-4f72-9f9f-c6b11ab88a7e)
 
 
-# Desafio DataGlowUp - Analise dos Dados do YOUTUBE.
+# Desafio DataGlowUp - Análise dos Dados do YOUTUBE.
 
 Foi proposto um desafio para fazer uma análise com os dados do Youtube, de alguns países, do período de 2006 a 2018.
 
@@ -11,10 +11,10 @@ Foi proposto um desafio para fazer uma análise com os dados do Youtube, de algu
 
 Foi utilizado o Python e o Notebook Jupyter para fazer as primeiras análises da base de dados.
 A base de dados, continha vários arquivos csv e json, separada por países.
-Decidi converter as bases para dataframe, para proceder com a unificação dos dados, criando 2 datframes: 
+Decidi converter as bases para dataframe, para proceder com a unificação dos dados, criando 2 dataframes: 
 
 -**df_youtube** - contendo a base geral dos dados.
--**df_catgorias** - contendo o id e nome das categorias dos vídeos.
+-**df_categorias** - contendo o id e nome das categorias dos vídeos.
 
 No notebook contém todo o passo a passo dessas análises, tratamentos e merge das bases.
 
@@ -22,7 +22,7 @@ No notebook contém todo o passo a passo dessas análises, tratamentos e merge d
 
 ## 🚀 Análises Estatísticas (PYTHON).
 
-Como a base de dados, continha muitas informações numéricas, decidi fazer algumas análises estatíticas, antes de proceder com a visualização no PowerBi.
+Como a base de dados, continha muitas informações numéricas, decidi fazer algumas análises estatísticas, antes de proceder com a visualização no PowerBi.
 
 ### Resumo da Análise Estatística das Métricas de Vídeos - 
 Foi utilizado Mapa de Calor, que representa visualmente a matriz de correlação entre as métricas selecionadas.
@@ -43,7 +43,7 @@ O dashboard permite a seleção de filtros para personalizar a análise dos dado
 - **Ano:** Selecione o ano desejado para análise.
 - **País:** Escolha um país específico.
 - **Categoria:** Selecione uma categoria específica.
-- **Canal:** Escolha um canal especifíco.
+- **Canal:** Escolha um canal específico.
 
 ### Análise de Engajamento
 
@@ -70,7 +70,7 @@ O dashboard permite a seleção de filtros para personalizar a análise dos dado
 
 ### Análise de Satisfação
 
-- **Gráfico de Barras Horizontais:** Gráfico de barras que mostra o % de satisfação por categoria, onde verde tem o maior percentual positivo de satisfação e vermelhor tem o menor percentual positivo (negativo) de satisfação.
+- **Gráfico de Barras Horizontais:** Gráfico de barras que mostra o % de satisfação por categoria, onde verde tem o maior percentual positivo de satisfação e vermelho tem o menor percentual positivo (negativo) de satisfação.
 
 ---
 ## 🛠️ Link do visual do PowerBi.
